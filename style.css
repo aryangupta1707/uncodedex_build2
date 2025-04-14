@@ -218,6 +218,13 @@
     }
 
 
+    @media (max-width: 512px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+      }
+    }
 
     @media (max-width: 768px) {
       .hero h1 {
@@ -299,10 +306,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    align-items: center;
 }
 
 .gallery-grid img {
     width: 100%;
+    height: 80%;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: transform 0.3s;
